@@ -68,6 +68,4 @@ public class Employee implements Serializable {
 
     @SerializedName("profile_image")
     private String profileImage;
-
-
 }

@@ -14,6 +14,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
+/**
+ * Employee Model gettting employee list.
+ */
+
 public class EmployeeModel implements IEmployeeContract.Model {
     String TAG = "EmpList";
 

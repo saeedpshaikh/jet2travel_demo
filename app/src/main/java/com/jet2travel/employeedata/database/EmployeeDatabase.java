@@ -9,6 +9,10 @@ import androidx.room.RoomDatabase;
 import com.jet2travel.employeedata.models.Employee;
 import com.jet2travel.employeedata.utils.AppConstant;
 
+/**
+ * Database init
+ */
+
 @Database(entities = { Employee.class }, version = 1)
 public abstract class EmployeeDatabase  extends RoomDatabase {
 

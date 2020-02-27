@@ -5,70 +5,71 @@
 
     <ImageView
         android:id="@+id/img_employee_profile_large"
-        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/dp_200"
         android:layout_centerHorizontal="true"
         android:scaleType="centerInside"
-        android:src="@drawable/img_larg_employee"
-        android:layout_height="@dimen/dp_200" />
+        android:src="@drawable/img_larg_employee" />
 
     <TextView
         android:id="@+id/txt_employee_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_employee_profile_large"
+        android:layout_marginLeft="@dimen/dp_10"
         android:layout_marginTop="@dimen/dp_10"
         android:text="@string/name"
-        android:layout_width="wrap_content"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/img_employee_profile_large" />
+        android:textStyle="bold" />
 
 
     <TextView
         android:id="@+id/txt_employee_name"
-        android:layout_marginTop="@dimen/dp_10"
-        android:layout_toRightOf="@+id/txt_employee_name_label"
         android:layout_width="wrap_content"
-        android:layout_marginLeft="@dimen/dp_10"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_employee_profile_large" />
+        android:layout_below="@+id/img_employee_profile_large"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/txt_employee_name_label" />
 
 
     <TextView
         android:id="@+id/txt_employee_salary_label"
-        android:layout_marginTop="@dimen/dp_10"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_employee_name"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
         android:text="@string/salary"
-        android:layout_below="@+id/txt_employee_name" />
+        android:textStyle="bold" />
 
 
     <TextView
         android:id="@+id/txt_employee_salary"
-        android:layout_marginTop="@dimen/dp_10"
-        android:layout_toRightOf="@+id/txt_employee_salary_label"
-        android:layout_marginLeft="@dimen/dp_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_employee_name" />
+        android:layout_below="@+id/txt_employee_name"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/txt_employee_salary_label" />
 
     <TextView
         android:id="@+id/txt_employee_id_label"
-        android:layout_marginTop="@dimen/dp_10"
         android:layout_width="wrap_content"
-        android:textStyle="bold"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:text="@string/employee_id"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_employee_salary_label" />
+        android:layout_below="@+id/txt_employee_salary_label"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/employee_id"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/txt_employee_id"
-        android:layout_marginTop="@dimen/dp_10"
         android:layout_width="wrap_content"
-        android:layout_marginLeft="@dimen/dp_10"
-        android:layout_toRightOf="@+id/txt_employee_id_label"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txt_employee_salary_label" />
+        android:layout_below="@+id/txt_employee_salary_label"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@+id/txt_employee_id_label" />
 
 </RelativeLayout>

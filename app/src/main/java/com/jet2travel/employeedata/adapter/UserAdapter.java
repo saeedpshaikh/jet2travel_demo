@@ -48,7 +48,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.list_item_user_data, parent, false);
+                .inflate(R.layout.list_item_employee_data, parent, false);
 
         return new MyViewHolder(itemView);
     }
@@ -154,8 +154,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
                 Collections.sort(employees, new Comparator<Employee>() {
                     @Override
                     public int compare(final Employee objectlhs, final Employee objectrhs) {
-                        Integer ageEmployeeLhs = objectlhs.getId();
-                        Integer ageEmployeeRhs = objectrhs.getId();
+                        Integer ageEmployeeLhs = objectlhs.getEmployeeAge();
+                        Integer ageEmployeeRhs = objectrhs.getEmployeeAge();
                         return ageEmployeeLhs.compareTo(ageEmployeeRhs);
                     }
                 });

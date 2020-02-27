@@ -33,6 +33,9 @@ public class UiUtils {
         current.finish();
     }
 
+    /**
+     * Intent back stack with data with bundle
+     */
     public void goToActivity(Activity current, Class<? extends Activity> otherActivityClass, Bundle extras) {
         Intent intent = new Intent(current, otherActivityClass);
         if (extras != null) {
@@ -47,6 +50,10 @@ public class UiUtils {
         }
         activityStack.clear();
     }
+
+    /**
+     * we get status of internate connection.
+     */
 
     public static boolean isConnected(Activity activity) {
         NetworkInfo info = getNetworkInfo(activity);

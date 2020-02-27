@@ -11,6 +11,10 @@ import java.util.List;
 
 import static androidx.room.OnConflictStrategy.REPLACE;
 
+/**
+ * Room dao
+ */
+
 @Dao
 public interface DaoAccess {
 

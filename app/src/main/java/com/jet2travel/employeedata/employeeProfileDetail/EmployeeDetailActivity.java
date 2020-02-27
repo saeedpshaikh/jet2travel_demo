@@ -55,7 +55,7 @@ public class EmployeeDetailActivity extends AppCompatActivity implements IEmploy
                 txtEmployeeName.setText(employee.getEmployeeName());
             }
             if (employee.getEmployeeSalary() != null) {
-                txtEmployeeSalary.setText(employee.getEmployeeSalary());
+                txtEmployeeSalary.setText(employee.getEmployeeSalary()+"$");
             }
             if (Integer.toString(employee.getEmployeeAge()) != null) {
                 txtEmployeeAge.setText(Integer.toString(employee.getEmployeeAge()));

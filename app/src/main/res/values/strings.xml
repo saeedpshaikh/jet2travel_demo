@@ -12,5 +12,7 @@
     <string name="delete_alert_message">Are you sure you want to delete?</string>
     <string name="name">Name:</string>
     <string name="salary">Salary:</string>
-    <string name="employee_id">Employee Id:</string>
+    <string name="employee_id">Employee Age:</string>
+    <string name="sort_by_name">Sort by name</string>
+    <string name="sort_by_age">Sort by age</string>
 </resources>
