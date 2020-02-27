@@ -42,7 +42,7 @@ public class EmployeeActivity extends AppCompatActivity implements IEmployeeCont
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_data);
         activity = this;
-     //   getSupportActionBar().setTitle(getString(R.string.employee_title));
+        getSupportActionBar().setTitle(getString(R.string.employee_title));
 
         setUpDatabase();
         initUI();
