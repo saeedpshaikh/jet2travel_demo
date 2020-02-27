@@ -6,4 +6,21 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="0"
+        android:title="Action Search"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/action_sort_name"
+        android:orderInCategory="0"
+        android:title="Sort by name"/>
+
+    <item
+        android:id="@+id/action_sort_age"
+        android:orderInCategory="0"
+        android:title="Sort by Id"/>
 </menu>
