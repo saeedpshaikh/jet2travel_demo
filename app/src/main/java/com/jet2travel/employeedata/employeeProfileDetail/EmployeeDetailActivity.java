@@ -84,7 +84,7 @@ public class EmployeeDetailActivity extends AppCompatActivity implements IEmploy
             if (Integer.toString(employee.getEmployeeAge()) != null) {
                 txtEmployeeAge.setText(Integer.toString(employee.getEmployeeAge()));
             }
-            if (TextUtils.isEmpty(employee.getProfileImage())) {
+            if (!TextUtils.isEmpty(employee.getProfileImage())) {
                 showProfileImage(employee.getProfileImage());
             }
         }
@@ -92,7 +92,6 @@ public class EmployeeDetailActivity extends AppCompatActivity implements IEmploy
 
 
     private void showProfileImage(String profileImage) {
-        if (!TextUtils.isEmpty(profileImage)) {
             Glide.with(activity)
                     .load(profileImage)
                     .listener(new RequestListener<Drawable>() {
@@ -108,7 +107,6 @@ public class EmployeeDetailActivity extends AppCompatActivity implements IEmploy
                     })
                     .into(imgEmployeeProfile);
         }
-    }
 
 }
 
