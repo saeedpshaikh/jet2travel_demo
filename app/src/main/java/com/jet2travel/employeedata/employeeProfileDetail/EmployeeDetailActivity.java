@@ -1,6 +1,7 @@
 package com.jet2travel.employeedata.employeeProfileDetail;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +24,8 @@ public class EmployeeDetailActivity extends AppCompatActivity implements IEmploy
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_detail_profile);
         getSupportActionBar().setTitle(getString(R.string.employee_details));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         initUI();
         presenter = new EmployeeDetailPresenter(this);
         presenter.requestData();
@@ -47,6 +50,16 @@ public class EmployeeDetailActivity extends AppCompatActivity implements IEmploy
     public void sendData() {
         Employee employee = (Employee) getIntent().getSerializableExtra(AppConstant.EMPLOYEE_DATA);
         initializeData(employee);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void initializeData(Employee employee) {
